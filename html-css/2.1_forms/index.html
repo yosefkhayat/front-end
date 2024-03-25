@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/8d7afb10d9.js" crossorigin="anonymous"></script>
+        <title>Forms</title>
+        <meta name="description" content="This is My Form page">   
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="Robots" content="none"> 
+        <!-- href will be changed when the site is running on the server-->
+        <link rel="canonical" href="http://localhost/mywebsite">
+        <link rel="icon" type="image/png" sizes="16x16" href="a.png">  
+        <style>
+            div{
+                padding: 7px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="index.html">
+            <h1>
+                Create an Account
+            </h1>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <label for="age">Age:</label><br>
+                <select name="age" id="age">
+                    <option value="0">Select Age</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="description">Tell us a little about yourself:</label><br>
+                <textarea name="description" id="description" cols="50"
+                rows="5"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" name="agree" value="true" id="agree">
+                <label for="agree">
+                    I agree to the
+                    <a href="location-of-the-page.html">terms of service</a>
+                </label>
+            </div>
+            <input type="submit" value="Sign Up">
+
+        </form>
+    </body>
+</html>
